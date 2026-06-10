@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px; /* padrão — tamanho base controlado pelo Tailwind via fontSize.base */
+  }
+
+  body {
+    @apply bg-cream text-brown-dark font-sans;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brown text-cream px-8 py-3 text-sm tracking-widest uppercase font-sans
+           hover:bg-brown-dark transition-colors duration-300 rounded-sm;
+  }
+
+  .btn-outline {
+    @apply bg-olive border-2 border-olive text-cream px-8 py-3 text-sm tracking-widest uppercase font-sans
+           hover:bg-olive-dark transition-colors duration-300 rounded-full;
+  }
+
+  .section-title {
+    @apply font-serif text-3xl md:text-4xl text-brown font-light tracking-wide;
+  }
+
+  .nav-link {
+    @apply font-sans text-sm tracking-[0.2em] uppercase text-brown
+           hover:text-brown-dark transition-colors;
+  }
+}
