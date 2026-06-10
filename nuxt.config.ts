@@ -17,14 +17,21 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           name: 'description',
-          content:
-            'Mariana Fatur — Psicóloga | CRP: 07/21477. Atendimento online via psicanálise para jovens e adultos em todo o Brasil.',
+          content: 'Mariana Fatur — Psicóloga | CRP: 07/21477. Atendimento online via psicanálise para jovens e adultos em todo o Brasil.',
         },
-        { property: 'og:title', content: 'Mariana Fatur | Psicóloga' },
-        {
-          property: 'og:description',
-          content: 'Atendimento online via psicanálise. Descubra uma vida mais saudável através da psicoterapia.',
-        },
+        // Open Graph
+        { property: 'og:type',        content: 'website' },
+        { property: 'og:url',         content: 'https://lucasinocente.github.io/mari/' },
+        { property: 'og:title',       content: 'Mariana Fatur | Psicóloga' },
+        { property: 'og:description', content: 'Atendimento online via psicanálise. Descubra uma vida mais saudável através da psicoterapia.' },
+        { property: 'og:image',       content: 'https://lucasinocente.github.io/mari/images/mariana-red.jpg' },
+        { property: 'og:locale',      content: 'pt_BR' },
+        { property: 'og:site_name',   content: 'Mariana Fatur — Psicóloga' },
+        // Twitter / X Card
+        { name: 'twitter:card',        content: 'summary_large_image' },
+        { name: 'twitter:title',       content: 'Mariana Fatur | Psicóloga' },
+        { name: 'twitter:description', content: 'Atendimento online via psicanálise. Descubra uma vida mais saudável através da psicoterapia.' },
+        { name: 'twitter:image',       content: 'https://lucasinocente.github.io/mari/images/mariana-red.jpg' },
       ],
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -39,7 +46,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/', '/sobre', '/areas', '/abordagem', '/contato'],
+      routes: ['/', '/sobre', '/areas', '/abordagem', '/contato', '/faq'],
     },
   },
 })

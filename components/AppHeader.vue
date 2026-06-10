@@ -97,6 +97,7 @@ const links = [
   { to: '/sobre',      label: 'Sobre'      },
   { to: '/areas',      label: 'Áreas'      },
   { to: '/abordagem',  label: 'Abordagem'  },
+  { to: '/faq',        label: 'FAQ'        },
   { to: '/contato',    label: 'Contato'    },
 ]
 
