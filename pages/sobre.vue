@@ -13,6 +13,20 @@
 
           <div class="w-10 h-px bg-brown-light"></div>
 
+          <!-- Foto com blob -->
+          <div class="flex justify-center relative md:hidden">
+            <!-- Blob background -->
+            <div
+              class="absolute inset-0 m-6 rounded-[20%_10%_20%_40%/20%_10%_40%_20%] bg-olive/20"
+              style="transform: rotate(-5deg);"
+            ></div>
+            <img
+              :src="assetUrl('/images/mariana-red.jpg')"
+              alt="Mariana Fatur"
+              class="relative z-10 w-full object-cover rounded-[60%_40%_30%_70%/60%_30%_70%_40%] shadow-lg"
+            />
+          </div>
+
           <div class="font-sans text-brown-dark/80 leading-[2] text-base space-y-4">
             <p>
               Sou formada pela Pontifícia Universidade Católica do Rio Grande do Sul
@@ -32,7 +46,7 @@
         </div>
 
         <!-- Foto com blob -->
-        <div class="flex justify-center relative">
+        <div class="flex justify-center relative hidden md:block">
           <!-- Blob background -->
           <div
             class="absolute inset-0 m-6 rounded-[20%_10%_20%_40%/20%_10%_40%_20%] bg-olive/20"
@@ -61,7 +75,7 @@
       <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
         <!-- Foto P&B -->
-        <div class="flex justify-center">
+        <div class="flex justify-center hidden md:block">
           <img
             :src="assetUrl('/images/chair.jpg')"
             alt="Ambiente terapêutico"

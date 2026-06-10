@@ -1,6 +1,12 @@
 <template>
   <div>
 
+    <!-- Nome mobile (só aparece em telas pequenas) -->
+    <div class="md:hidden text-center py-10 bg-cream border-b border-beige">
+      <h1 class="font-script text-5xl text-brown">Mariana Fatur</h1>
+      <p class="font-sans text-xs tracking-[0.25em] uppercase text-brown-mid mt-2">Psicóloga &nbsp;|&nbsp; CRP: 07/21477</p>
+    </div>
+
     <section class="py-24 bg-cream">
       <div class="max-w-4xl mx-auto px-6">
 
@@ -28,16 +34,31 @@
 
         <!-- Tabela de informações -->
         <div class="mt-16 border border-brown-light/30 rounded-sm overflow-hidden">
-          <div class="grid grid-cols-3 divide-x divide-brown-light/30">
-            <div
-              v-for="col in tabela"
-              :key="col.label"
-              class="flex flex-col"
-            >
+          <!-- Desktop: 3 colunas lado a lado -->
+          <div class="hidden md:grid md:grid-cols-3 divide-x divide-brown-light/30">
+            <div v-for="col in tabela" :key="col.label" class="flex flex-col">
               <div class="bg-beige px-6 py-4 border-b border-brown-light/30">
                 <p class="font-sans text-xs tracking-[0.2em] uppercase text-brown">{{ col.label }}</p>
               </div>
               <div class="px-6 py-6">
+                <p
+                  v-for="line in col.lines"
+                  :key="line"
+                  class="font-sans text-brown-dark text-base leading-relaxed"
+                >
+                  {{ line }}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile: linhas empilhadas -->
+          <div class="md:hidden divide-y divide-brown-light/30">
+            <div v-for="col in tabela" :key="col.label" class="flex items-baseline gap-4 px-5 py-4">
+              <p class="font-sans text-xs tracking-[0.2em] uppercase text-brown w-20 flex-shrink-0">
+                {{ col.label }}
+              </p>
+              <div>
                 <p
                   v-for="line in col.lines"
                   :key="line"

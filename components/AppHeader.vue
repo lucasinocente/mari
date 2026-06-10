@@ -3,11 +3,17 @@
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
 
       <!-- Logo -->
-      <NuxtLink to="/" class="flex items-center justify-center">
+      <NuxtLink to="/" class="flex items-center justify-start gap-2">
         <img
           :src="assetUrl('/images/logo.png')"
           alt="Mariana Fatur — Psicóloga"
-          class="h-16 w-auto object-contain"
+          class="h-14 w-auto object-contain flex-shrink-0"
+        />
+        <!-- Texto só aparece em telas grandes (lg+) -->
+        <img
+          :src="assetUrl('/images/logo-escrito.png')"
+          alt="Mariana Fatur — Psicóloga"
+          class="hidden lg:block h-8 mt-1 w-auto object-contain"
         />
       </NuxtLink>
 
@@ -22,7 +28,7 @@
         >
           {{ link.label }}
         </NuxtLink>
-      </nav>
+
 
       <!-- CTA Desktop -->
       <a
@@ -33,6 +39,8 @@
       >
         Agendar uma conversa
       </a>
+      </nav>
+
 
       <!-- Mobile menu toggle -->
       <button

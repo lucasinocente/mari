@@ -1,6 +1,12 @@
 <template>
   <div>
 
+    <!-- Nome mobile (só aparece em telas pequenas) -->
+    <div class="md:hidden text-center py-10 bg-cream border-b border-beige">
+      <h1 class="font-script text-5xl text-brown">Mariana Fatur</h1>
+      <p class="font-sans text-xs tracking-[0.25em] uppercase text-brown-mid mt-2">Psicóloga &nbsp;|&nbsp; CRP: 07/21477</p>
+    </div>
+
     <!-- Hero da seção -->
     <section class="bg-olive-bg py-24">
       <div class="max-w-4xl mx-auto px-6 text-center text-cream/90 mb-16">
