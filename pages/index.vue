@@ -21,7 +21,7 @@
           style="transform: rotate(-5deg);"
         ></div>
         <img
-          :src="'/images/mariana-black.jpg'"
+          :src="assetUrl('/images/mariana-black.jpg')"
           alt="Mariana Fatur"
           class="relative z-10 w-full max-w-sm md:max-w-md object-cover rounded-[60%_50%_30%_70%/60%_20%_20%_80%] shadow-lg"
         />
@@ -76,4 +76,5 @@
 
 <script setup lang="ts">
 useHead({ title: 'Mariana Fatur | Psicóloga' })
+const assetUrl = useAssetUrl()
 </script>

@@ -5,7 +5,7 @@
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center justify-center">
         <img
-          :src="'/images/logo.png'"
+          :src="assetUrl('/images/logo.png')"
           alt="Mariana Fatur — Psicóloga"
           class="h-16 w-auto object-contain"
         />
@@ -80,6 +80,7 @@
 
 <script setup lang="ts">
 const menuOpen = ref(false)
+const assetUrl = useAssetUrl()
 
 // Troque pelo número real no formato internacional (sem + e espaços)
 const whatsappUrl = 'https://wa.me/5551981969035?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+conversa!'

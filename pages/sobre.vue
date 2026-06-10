@@ -39,7 +39,7 @@
             style="transform: rotate(-5deg);"
           ></div>
           <img
-            :src="'/images/mariana-red.jpg'"
+            :src="assetUrl('/images/mariana-red.jpg')"
             alt="Mariana Fatur"
             class="relative z-10 w-full object-cover rounded-[60%_40%_30%_70%/60%_30%_70%_40%] shadow-lg"
           />
@@ -63,7 +63,7 @@
         <!-- Foto P&B -->
         <div class="flex justify-center">
           <img
-            :src="'/images/chair.jpg'"
+            :src="assetUrl('/images/chair.jpg')"
             alt="Ambiente terapêutico"
             class="w-full max-w-xs md:max-w-sm object-cover shadow-md"
           />
@@ -98,6 +98,7 @@
 
 <script setup lang="ts">
 useHead({ title: 'Sobre | Psicóloga Mariana Fatur' })
+const assetUrl = useAssetUrl()
 
 const formacao = [
   'Psicóloga | CRP: 07/21477',
