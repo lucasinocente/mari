@@ -22,7 +22,7 @@
               class="w-full text-left py-6 flex items-start justify-between gap-6 group"
               @click="toggle(i)"
             >
-              <span class="font-serif text-lg md:text-xl text-brown-dark group-hover:text-brown transition-colors">
+              <span class="font-sans text-sm tracking-[0.15em] uppercase text-brown-dark group-hover:text-brown transition-colors">
                 {{ item.question }}
               </span>
               <span class="mt-1 flex-shrink-0 text-brown transition-transform duration-300"
@@ -80,23 +80,31 @@ useHead({
             name: 'Como funciona a primeira sessão?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'A primeira sessão é um espaço de acolhimento e escuta. Você conta o que está sentindo e o que te trouxe até aqui — sem necessidade de se preparar ou organizar o que vai dizer. A partir dessa conversa, combinamos juntas como será o processo.',
+              text: 'A primeira sessão é um espaço para que possamos nos conhecer, compreender sua demanda e conversar sobre como funciona o processo terapêutico.',
             },
           },
           {
             '@type': 'Question',
-            name: 'Qual é o valor das sessões?',
+            name: 'OS ATENDIMENTOS SÃO PRESENCIAIS OU ONLINE?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'O valor é combinado diretamente entre nós. Entre em contato pelo WhatsApp para conversarmos sobre os detalhes.',
+              text: 'Todos os atendimentos são realizados 100% online, com total flexibilidade. Atendo pessoas de qualquer lugar do Brasil e do mundo.',
             },
           },
           {
             '@type': 'Question',
-            name: 'A psicanálise funciona online?',
+            name: 'QUANTO TEMPO DURA O TRATAMENTO?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Sim. O atendimento online tem se mostrado tão eficaz quanto o presencial. O espaço da escuta se constrói independente da modalidade — o que importa é a continuidade e o vínculo terapêutico.',
+              text: 'A jornada dura o tempo necessário que você precisar para elaborar suas dores e construir mudanças que se sustentem.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'ATENDE POR PLANO DE SAÚDE?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Somente particular com nota fiscal para reembolso de convênios.',
             },
           },
         ],
@@ -113,35 +121,19 @@ const toggle = (i: number) => {
 const faqs = [
   {
     question: 'Como funciona a primeira sessão?',
-    answer: 'A primeira sessão é um espaço de acolhimento e escuta. Você conta o que está sentindo e o que te trouxe até aqui — sem necessidade de se preparar ou organizar o que vai dizer. A partir dessa conversa, combinamos juntas como será o processo.',
+    answer: 'A primeira sessão é um espaço para que possamos nos conhecer, compreender sua demanda e conversar sobre como funciona o processo terapêutico.',
   },
   {
-    question: 'Qual é o valor das sessões?',
-    answer: 'O valor é combinado diretamente entre nós. Entre em contato pelo WhatsApp para conversarmos sobre isso com mais detalhes.',
+    question: 'OS ATENDIMENTOS SÃO PRESENCIAIS OU ONLINE?',
+    answer: 'Todos os atendimentos são realizados 100% online, com total flexibilidade. Atendo pessoas de qualquer lugar do Brasil e do mundo.'
   },
   {
-    question: 'A psicanálise funciona online?',
-    answer: 'Sim. O atendimento online tem se mostrado tão eficaz quanto o presencial. O espaço da escuta se constrói independente da modalidade — o que importa é a continuidade e o vínculo terapêutico.',
+    question: 'Quanto tempo dura o tratamento?',
+    answer: 'A jornada dura o tempo necessário que você precisar para elaborar suas dores e construir mudanças que se sustentem.',
   },
   {
-    question: 'Com que frequência são as sessões?',
-    answer: 'As sessões têm frequência semanal, com duração de 50 minutos cada. A regularidade é parte importante do processo psicanalítico.',
-  },
-  {
-    question: 'Quanto tempo dura o processo terapêutico?',
-    answer: 'A duração varia de pessoa para pessoa e depende da sua demanda, dos seus objetivos e do próprio movimento do processo. Não há um prazo fixo — a terapia dura o tempo que fizer sentido para você.',
-  },
-  {
-    question: 'As sessões são sigilosas?',
-    answer: 'Sim. O sigilo é um princípio ético fundamental da psicologia. Tudo o que é compartilhado nas sessões permanece estritamente entre nós, garantido pelo Código de Ética do Psicólogo.',
-  },
-  {
-    question: 'Qual a diferença entre psicólogo e psiquiatra?',
-    answer: 'O psicólogo trabalha por meio da escuta e da psicoterapia, ajudando você a compreender e transformar padrões emocionais e comportamentais. O psiquiatra é médico e pode prescrever medicamentos. Em muitos casos, os dois trabalhos se complementam.',
-  },
-  {
-    question: 'Como sei se preciso de terapia?',
-    answer: 'Se você sente que algo está pesado, que repete padrões que gostaria de mudar, que sente ansiedade, tristeza persistente ou simplesmente quer se conhecer melhor — isso já é motivo suficiente. Você não precisa estar em crise para buscar ajuda.',
+    question: 'Atende por plano de saúde?',
+    answer: 'Somente particular com nota fiscal para reembolso de convênios.',
   },
 ]
 </script>

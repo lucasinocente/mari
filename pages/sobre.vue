@@ -29,18 +29,17 @@
 
           <div class="font-sans text-brown-dark/80 leading-[2] text-base space-y-4">
             <p>
-              Sou formada pela Pontifícia Universidade Católica do Rio Grande do Sul
-              (PUCRS) com experiência em Atendimentos Clínicos para Jovens e Adultos.
+              Formada pela Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS),
+              com diversos cursos de especialização, participação em congressos, mentorias
+              e experiência em atendimentos clínicos de jovens e adultos, há mais de dez
+              anos acompanho pessoas que buscam expandir seu autoconhecimento, inteligência
+              emocional e autoconfiança para alcançar maior equilíbrio entre sua vida pessoal
+              e profissional e obter maior satisfação e qualidade de vida.
             </p>
             <p>
-              Há mais de dez anos, acompanho pessoas que buscam superar a ansiedade,
-              os traumas e padrões emocionais repetitivos, além de sentimentos de
-              culpa e tristeza persistente.
-            </p>
-            <p>
-              Meus atendimentos são na modalidade online com base Psicanalítica e
-              meu trabalho é criar um espaço de escuta qualificada — sem julgamento,
-              sem pressa, com profundidade.
+              Meus atendimentos são na modalidade online, com base Psicanalítica, e meu
+              trabalho é criar um espaço de escuta qualificada — sem julgamento ou sem
+              pressa; com profundidade.
             </p>
           </div>
         </div>
@@ -91,9 +90,9 @@
             <div
               v-for="item in formacao"
               :key="item"
-              class="py-4 flex items-start gap-4"
+              class="py-4 flex items-center gap-4"
             >
-              <span class="mt-1 w-2 h-2 rounded-full bg-brown flex-shrink-0"></span>
+              <span class="w-2 h-2 rounded-full bg-brown flex-shrink-0"></span>
               <p class="text-base text-brown-dark tracking-wide">{{ item }}</p>
             </div>
           </div>
@@ -117,6 +116,7 @@ const assetUrl = useAssetUrl()
 const formacao = [
   'Psicóloga | CRP: 07/21477',
   'Graduada em Psicologia pela Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS)',
+  'Formação em Psicologia Forense',
   'Mais de 10 anos de experiência clínica',
   'Atendimento de jovens e adultos',
 ]

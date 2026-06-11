@@ -11,7 +11,7 @@
     <section class="bg-olive-bg py-24">
       <div class="max-w-4xl mx-auto px-6 text-center text-cream/90 mb-16">
         <p class="font-sans text-xs tracking-[0.3em] uppercase text-cream/60 mb-4">Especialidades</p>
-        <h2 class="font-serif text-4xl md:text-5xl font-light">Como posso ajudar</h2>
+        <h2 class="font-serif text-4xl md:text-5xl font-light">Como posso ajudar?</h2>
       </div>
 
       <div class="max-w-4xl mx-auto px-6 grid md:grid-cols-2 gap-10">
@@ -57,12 +57,12 @@ const areas = [
   {
     title: 'Atendimento Individual',
     description:
-      'Um espaço de escuta psicanalítica para adultos que buscam compreender suas emoções, desenvolver autoconhecimento e construir mudanças consistentes no modo de viver e se relacionar.',
+      'Busco proporcionar um espaço de escuta psicanalítica para adultos que desejam compreender melhor suas emoções, desenvolver autoconhecimento e construir mudanças consistentes no modo de viver e se relacionar.',
   },
   {
     title: 'Atendimento para Adolescentes',
     description:
-      'Um espaço de escuta e acolhimento para adolescentes que atravessam transformações emocionais, desafios nos relacionamentos, ansiedade, inseguranças e questões de identidade.',
+      'Desenvolvo um ambiente voltado ao diálogo, acolhimento e compreensão, com proteção, presença e fortalecimento de vínculos para jovens que atravessam transformações emocionais, desafios em seus relacionamentos, ansiedade, insegurança, questões de identidade, entre outras.',
   },
 ]
 
