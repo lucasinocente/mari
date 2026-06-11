@@ -34,6 +34,7 @@ export default defineNuxtConfig({
         { name: 'twitter:image',       content: 'https://lucasinocente.github.io/mari/images/mariana-red.jpg' },
       ],
       link: [
+        { rel: 'icon', type: 'image/png', href: '/mari/images/logo-2.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {
