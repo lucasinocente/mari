@@ -24,8 +24,8 @@
   }
 
   .btn-outline {
-    @apply bg-olive border-2 border-olive text-cream px-8 py-3 text-sm tracking-widest uppercase font-sans
-           hover:bg-olive-dark transition-colors duration-300 rounded-full;
+    @apply border-2 border-accent text-brown px-8 py-3 text-sm tracking-widest uppercase font-sans
+           hover:bg-accent hover:text-brown-dark transition-colors duration-300 rounded-full;
   }
 
   .section-title {

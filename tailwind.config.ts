@@ -11,23 +11,37 @@ export default {
   ],
   theme: {
     extend: {
+      // ── Paleta do Manual de Identidade Visual ──────────────────────────
       colors: {
-        cream:        '#F7F3EC',
-        beige:        '#EDE8DC',
-        'brown-dark': '#2C1810',
-        brown:        '#7B4F2E',
-        'brown-mid':  '#A0724A',
-        'brown-light':'#C9A882',
-        olive:        '#7A8B65',
-        'olive-light':'#8C9E78',
-        'olive-dark': '#5C6B4E',
-        'olive-bg':   '#8A9474',
+        // Principal
+        cream:        '#fffbf7',  // fundo principal
+        brown:        '#634127',  // marrom principal
+        olive:        '#8e9470',  // verde-sálvia
+
+        // Secundária
+        beige:        '#d8d2c6',  // fundo secundário / muted
+        'brown-mid':  '#ae6a39',  // marrom terracota
+
+        // Neutros
+        'brown-dark': '#2b2e34',  // grafite — textos longos
+        'brown-light':'#c49a6e',  // marrom claro (interpolado)
+
+        // Variações olive
+        'olive-light':'#a3a882',
+        'olive-dark': '#6a7055',
+        'olive-bg':   '#8e9470',
+
+        // Destaque (usar com parcimônia)
+        accent:       '#bbcb33',  // verde-limão — botões CTA, destaques
       },
+
+      // ── Tipografia do MIV ──────────────────────────────────────────────
       fontFamily: {
-        script: ['Dancing Script', 'cursive'],
-        serif:  ['Cormorant Garamond', 'Georgia', 'serif'],
-        sans:   ['Lato', 'system-ui', 'sans-serif'],
+        script: ['Great Vibes', 'cursive'],           // nome, assinatura, citações
+        serif:  ['Libre Baskerville', 'Georgia', 'serif'], // títulos principais
+        sans:   ['Source Sans 3', 'system-ui', 'sans-serif'], // textos
       },
+
       fontSize: {
         'xs':      ['0.75rem',  { lineHeight: '1.4' }],
         'sm':      ['0.875rem', { lineHeight: '1.5' }],

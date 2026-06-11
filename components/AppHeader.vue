@@ -5,15 +5,9 @@
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center justify-start gap-2">
         <img
-          :src="assetUrl('/images/logo.png')"
+          :src="assetUrl('/images/logo-2.png')"
           alt="Mariana Fatur — Psicóloga"
           class="h-14 w-auto object-contain flex-shrink-0"
-        />
-        <!-- Texto só aparece em telas grandes (lg+) -->
-        <img
-          :src="assetUrl('/images/logo-escrito.png')"
-          alt="Mariana Fatur — Psicóloga"
-          class="hidden lg:block h-8 mt-1 w-auto object-contain"
         />
       </NuxtLink>
 
@@ -118,7 +112,6 @@ watch(() => route.path, () => { menuOpen.value = false })
 }
 
 header.header {
-  background: #e0dacf;
-  font-weight: bold;
+  background: #fffbf7;
 }
 </style>

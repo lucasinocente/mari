@@ -117,7 +117,6 @@ const assetUrl = useAssetUrl()
 const formacao = [
   'Psicóloga | CRP: 07/21477',
   'Graduada em Psicologia pela Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS)',
-  'Pós-graduada em Psicanálise Clínica',
   'Mais de 10 anos de experiência clínica',
   'Atendimento de jovens e adultos',
 ]
