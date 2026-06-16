@@ -38,7 +38,7 @@
           <div class="hidden md:block w-12 h-px bg-brown-light"></div>
 
           <p class="font-serif text-xl italic text-brown leading-relaxed">
-            Descubra uma vida mais saudável através da psicoterapia.
+            Descubra uma vida mais saudável através da psicoterapia
           </p>
 
           <div class="font-sans text-brown-dark/80 leading-[2] text-base max-w-md space-y-4">
