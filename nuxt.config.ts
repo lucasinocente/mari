@@ -21,20 +21,20 @@ export default defineNuxtConfig({
         },
         // Open Graph
         { property: 'og:type',        content: 'website' },
-        { property: 'og:url',         content: 'https://lucasinocente.github.io/mari/' },
+        { property: 'og:url',         content: 'https://marianafatur.com.br/' },
         { property: 'og:title',       content: 'Mariana Fatur | Psicóloga' },
         { property: 'og:description', content: 'Atendimento online via psicanálise. Descubra uma vida mais saudável através da psicoterapia.' },
-        { property: 'og:image',       content: 'https://lucasinocente.github.io/mari/images/mariana-red.jpg' },
+        { property: 'og:image',       content: 'https://marianafatur.com.br/images/mariana-red.jpg' },
         { property: 'og:locale',      content: 'pt_BR' },
         { property: 'og:site_name',   content: 'Mariana Fatur — Psicóloga' },
         // Twitter / X Card
         { name: 'twitter:card',        content: 'summary_large_image' },
         { name: 'twitter:title',       content: 'Mariana Fatur | Psicóloga' },
         { name: 'twitter:description', content: 'Atendimento online via psicanálise. Descubra uma vida mais saudável através da psicoterapia.' },
-        { name: 'twitter:image',       content: 'https://lucasinocente.github.io/mari/images/mariana-red.jpg' },
+        { name: 'twitter:image',       content: 'https://marianafatur.com.br/images/mariana-red.jpg' },
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/mari/images/logo-2.png' },
+        { rel: 'icon', type: 'image/png', href: '/images/logo-2.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {
