@@ -88,6 +88,7 @@ const assetUrl = useAssetUrl()
 const whatsappUrl = 'https://wa.me/5551981969035?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+conversa!'
 
 const links = [
+  { to: '/',      label: 'Home'      },
   { to: '/sobre',      label: 'Sobre'      },
   { to: '/areas',      label: 'Áreas'      },
   { to: '/abordagem',  label: 'Abordagem'  },
