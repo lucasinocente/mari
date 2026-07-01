@@ -8,6 +8,17 @@
   </div>
 </template>
 
+<script setup lang="ts">
+useHead({
+  noscript: [
+    {
+      innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGMXFTHQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+      tagPosition: 'bodyOpen',
+    },
+  ],
+})
+</script>
+
 <style>
 .page-enter-active,
 .page-leave-active {
