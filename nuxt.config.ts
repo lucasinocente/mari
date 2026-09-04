@@ -8,6 +8,7 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://marianafatur.com.br/',
+    name: 'Mariana Fatur | Psicóloga',
   },
 
   app: {
