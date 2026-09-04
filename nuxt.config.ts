@@ -6,9 +6,13 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  site: {
+    url: 'https://marianafatur.com.br/',
+  },
+
   app: {
     // Se o repositório não for username.github.io, troque pelo nome do repo:
-    baseURL: 'https://marianafatur.com.br/',
+    baseURL: '/',
     head: {
       title: 'Mariana Fatur | Psicóloga',
       htmlAttrs: { lang: 'pt-BR' },
