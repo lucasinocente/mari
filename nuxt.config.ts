@@ -8,7 +8,7 @@ export default defineNuxtConfig({
 
   app: {
     // Se o repositório não for username.github.io, troque pelo nome do repo:
-    baseURL: '/',
+    baseURL: 'https://marianafatur.com.br/',
     head: {
       title: 'Mariana Fatur | Psicóloga',
       htmlAttrs: { lang: 'pt-BR' },
